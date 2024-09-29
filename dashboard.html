@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="elevator.css">
+</head>
+<body>
+    <button onclick="location.href='Lobby.html'">Lobby</button>
+    <button onclick="location.href='Aboutus.html'">AboutUs</button>
+    <button onclick="location.href='Pool.html'">Pool</button>
+    <style>
+    </style>
+    <h1>Here will be the pictures which represent each room</h1>
+    <br /><br />
+    <div>
+        <div class="elevator">
+            <div class="doors">
+                <div class="door left"></div>
+                <div class="door right"></div>
+            </div>
+        </div>
+        <button onclick="openElevator()">Open Elevator</button>
+    </div>
+
+    <script>
+        function openElevator() {
+            const elevator = document.querySelector('.elevator');
+            elevator.classList.add('open');
+            setTimeout(() => {
+                // Replace 'https://example.com' with the URL you want to redirect to
+                window.location.href = 'Floor1.html';
+            }, 1500); // Wait for 1.5 seconds before redirecting
+        }
+    </script>
+</body>
+</html>
