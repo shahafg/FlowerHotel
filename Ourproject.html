@@ -1,20 +1,154 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Our Project🏗️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Project - Blooming Stays Hotel</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f7f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .title {
+            font-size: 2.5em;
+            color: #2c1810;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(to right, #e8c6c6, #d4b8b8);
+        }
+
+        .story-section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin: 30px 0;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .benefit-icon {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background: linear-gradient(to right, #2c1810, #5a3825);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: transform 0.2s ease;
+            display: block;
+            margin: 30px auto;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+        }
+
+        .quote {
+            font-style: italic;
+            color: #666;
+            text-align: center;
+            margin: 30px 0;
+            font-size: 1.2em;
+        }
+    </style>
 </head>
 
 <body>
-    <p>Our Project</p>
-    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti cum mollitia laboriosam esse neque fuga sed
-        ex expedita modi. Architecto hic exercitationem debitis aut quam expedita tempora ducimus blanditiis reiciendis?
-    </p>
-    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore ab aliquam reiciendis deserunt accusantium
-        veniam deleniti minus incidunt accusamus vero, consequuntur perferendis porro. Quam modi rerum quae nobis
-        recusandae non?</div>
-    <button onclick="location.href='SignIN.html'">Return</button>
-</body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Our Project Journey</h1>
+        </div>
 
+        <div class="story-section">
+            <h2>The Birth of Hotel Flower</h2>
+            <p>Our journey began when we discovered the profound impact that flowers have on human wellbeing. Research has shown that being surrounded by flowers can significantly improve mental health, reduce stress, and enhance overall life satisfaction. This revelation inspired us to create more than just a hotel – we wanted to build a sanctuary where the therapeutic power of flowers could be experienced in every moment of your stay.</p>
+            
+            <p>Drawing from both modern research and ancient wisdom about the healing properties of flowers, we designed Hotel flower to be a unique fusion of luxury accommodation and natural wellness. Each aspect of our hotel has been thoughtfully crafted to maximize the benefits that flowers bring to our guests.</p>
+        </div>
+
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">🧠</div>
+                <h3>Mental Wellness</h3>
+                <p>Studies show that flowers can reduce anxiety by up to 40% and improve mood significantly within minutes of exposure.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">😴</div>
+                <h3>Better Sleep</h3>
+                <p>Certain flowers like lavender and jasmine have been proven to improve sleep quality and reduce insomnia symptoms.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🌱</div>
+                <h3>Air Purification</h3>
+                <p>Many flowers naturally purify the air, removing toxins and improving indoor air quality.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🎯</div>
+                <h3>Enhanced Focus</h3>
+                <p>Research indicates that flowering plants can improve concentration and productivity by up to 15%.</p>
+            </div>
+        </div>
+
+        <div class="story-section">
+            <h2>Our Implementation</h2>
+            <p>We've carefully selected flowers for each room based on their specific benefits. Our spring wing features cherry blossoms and tulips, known for their energy-boosting properties. The summer section showcases roses and sunflowers, celebrated for their mood-lifting effects. Autumn rooms incorporate chrysanthemums and dahlias, while winter spaces feature indoor orchids and peace lilies.</p>
+            
+            <p>Beyond aesthetics, we've integrated flowers into every aspect of the guest experience - from flower-infused cuisine to botanical spa treatments. Our gardens are designed not just for beauty, but as spaces for meditation, relaxation, and healing.</p>
+        </div>
+
+        <div class="quote">
+            "In a world of concrete and screens, we believe in the power of nature to heal, inspire, and transform."
+        </div>
+
+        <button onclick="location.href='SignIN.html'">Return to Sign In</button>
+    </div>
+</body>
 </html>

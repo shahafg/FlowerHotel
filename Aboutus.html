@@ -1,16 +1,133 @@
 ﻿<!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>About us❓</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us - Flower Hotel🌷</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f7f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .title {
+            font-size: 2.5em;
+            color: #2c1810;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(to right, #e8c6c6, #d4b8b8);
+        }
+
+        .names {
+            font-size: 1.2em;
+            color: #666;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .description {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin: 30px 0;
+            text-align: center;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        .feature-list {
+            margin: 30px 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .feature-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            flex: 1 1 200px;
+            text-align: center;
+            max-width: 300px;
+        }
+
+        button {
+            background: linear-gradient(to right, #2c1810, #5a3825);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: transform 0.2s ease;
+            display: block;
+            margin: 30px auto;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 
 <body>
-    <p>About us</p>
-    <p> Ethan Flor - 214610560 <br /> Shahaf Goren - 318303948</p>
-    <div>Welcome to our uniqe flowers hotel. We have seasonal flowers which make your stay wonderful</div>
-    <button onclick="location.href='SignIN.html'">Return</button>
-</body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">About Us</h1>
+            <p class="names">Ethan Flor | Shahaf Goren</p>
+        </div>
 
+        <div class="description">
+            Welcome to Blooming Stays, where every season tells a different story through the language of flowers. Our boutique hotel is a living canvas that transforms with nature's rhythm. From our lavender-scented corridors to our rose-adorned gardens, each corner of our establishment has been thoughtfully designed to bring the gentle beauty of flowers into your stay.
+        </div>
+
+        <ul class="feature-list">
+            <li class="feature-item">
+                <h3>🌸 Seasonal Beauty</h3>
+                <p>Experience rooms themed around the current season's blooms</p>
+            </li>
+            <li class="feature-item">
+                <h3>🌺 Garden Views</h3>
+                <p>Every room overlooks our meticulously maintained flower gardens</p>
+            </li>
+            <li class="feature-item">
+                <h3>🌷 Floral Activities</h3>
+                <p>Join our flower arranging workshops and garden tours</p>
+            </li>
+        </ul>
+
+        <button onclick="location.href='SignIN.html'">Return to Sign In</button>
+    </div>
+</body>
 </html>
