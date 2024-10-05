@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Reservation</title>
+    <link rel="stylesheet" href="Reservation.css">
+
+</head>
+
+<body>
+    <!-- Container for design puproses -->
+    <div class="container">
+
+    <h1>Book a Reservation</h1>
+
+    <p>Please fill in the form below to book a hotel room.</p>
+
+    <!-- Reservation Form -->
+    <form action="/submit-reservation" method="POST">
+
+        <label for="family-name">Family Name:</label><br>
+        <input type="text" id="family-name" name="family-name" required><br><br>
+
+        <label for="capacity">Capacity (Number of Guests):</label><br>
+        <input type="number" id="capacity" name="capacity" min="1" required><br><br>
+
+        <label for="from-date">From (Check-in Date):</label><br>
+        <input type="date" id="from-date" name="from-date" required><br><br>
+
+        <label for="to-date">To (Check-out Date):</label><br>
+        <input type="date" id="to-date" name="to-date" required><br><br>
+
+        <button type="submit">Book</button>
+    </form>
+</div>
+</body>
+
+</html>
