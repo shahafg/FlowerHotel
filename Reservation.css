@@ -1,4 +1,4 @@
-/* Reset and base styles */
+/* Reset and base styles, looks better in my opintion */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,6 @@
 
 body {
     background-color: #f9f7f4;
-    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4b8b8' fill-opacity='0.1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     padding: 40px 20px;
     line-height: 1.6;
 }
@@ -73,12 +72,6 @@ input {
     transition: border-color 0.3s ease;
 }
 
-input:focus {
-    outline: none;
-    border-color: #d4b8b8;
-    box-shadow: 0 0 5px rgba(212, 184, 184, 0.3);
-}
-
 button {
     background: linear-gradient(to right, #2c1810, #5a3825);
     color: white;
@@ -98,26 +91,6 @@ button:hover {
     box-shadow: 0 5px 15px rgba(44, 24, 16, 0.2);
 }
 
-/* Decorative elements */
-.flower-decoration {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    opacity: 0.1;
-    pointer-events: none;
-}
-
-.top-left {
-    top: 20px;
-    left: 20px;
-    transform: rotate(-45deg);
-}
-
-.bottom-right {
-    bottom: 20px;
-    right: 20px;
-    transform: rotate(45deg);
-}
 
 /* Responsive design */
 @media (max-width: 600px) {

@@ -11,12 +11,15 @@ const Room_clean = Object.freeze({
 
 // Room class definition
 class Room {
-    constructor(roomnum, price, capacity, state, clean) {
+    constructor(roomnum, price, capacity, state, clean, Fname='', CheckIn='', CheckOut='') {
         this.roomnum = roomnum;
         this.price = price;
         this.capacity = capacity;
         this.state = state;
         this.clean = clean;
+        this.Fname = Fname;
+        this.CheckIn = CheckIn;
+        this.CheckOut = CheckOut;
     }
 
     cleanRoom() {
@@ -66,6 +69,13 @@ function createRoomCard(room) {
                 <p>State: ${room.state}</p>
                 <p>isClean: ${room.clean}</p>
             </div>
+
+            <div class="reservation-info">
+            <p>Fname: ${room.Fname}</p>
+             <p>CheckIn: ${room.CheckIn}</p>
+             <p>CheckOut: ${room.CheckOut}</p>
+            </div>
+
             <div class="button-group">
                 <button class="button clean" onclick="rooms[${rooms.indexOf(room)}].cleanRoom()">Clean</button>
                 <button class="button service" onclick="rooms[${rooms.indexOf(room)}].roomservice()">Service</button>

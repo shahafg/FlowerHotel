@@ -19,6 +19,8 @@
 
     <!-- Reservation Form -->
     <form action="/submit-reservation" method="POST">
+        <!-- I should use get in order to transfer the data -->
+        <!-- <form action="reservation-info" method="GET"> -->
 
         <label for="family-name">Family Name:</label><br>
         <input type="text" id="family-name" name="family-name" required><br><br>
@@ -31,10 +33,17 @@
 
         <label for="to-date">To (Check-out Date):</label><br>
         <input type="date" id="to-date" name="to-date" required><br><br>
+            <!-- <button type="submit" class="button">?????</button> -->
 
-        <button type="submit">Book</button>
+        <button type="submit" onclick='Forward()'>Book</button 
+            form action="reservation-info" method="GET">
     </form>
 </div>
+<script>
+    const Forward = ()=>{
+        // Here I should declare the post method OR USE LOCAL STORAGE INSTED.
+    }
+</script>
 </body>
 
 </html>
