@@ -88,6 +88,7 @@ function createRoomCard(room) {
 
 function updateRoomDisplay(room) {
     const roomCard = document.querySelector(`[data-room="${room.roomnum}"]`);
+    // It updates the textContent of this tag to display the room’s price/state/clean.
     if (roomCard) {
         roomCard.querySelector('p:nth-child(2)').textContent = `Price: $${room.price}`;
         roomCard.querySelector('p:nth-child(4)').textContent = `State: ${room.state}`;
